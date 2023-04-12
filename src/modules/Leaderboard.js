@@ -1,7 +1,7 @@
 class Leaderboard {
   // define api end-point
   static apiEndPoint =
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5KvA5Psull4GbZZmbL4r/scores/';
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/zeuHJjnZPKYf0b8na598/scores/';
 
   static addScore = async () => {
     // grab the name and score from input

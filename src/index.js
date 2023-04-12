@@ -9,7 +9,10 @@ function component() {
     e.preventDefault();
     Leaderboard.addScore();
   });
-
+  const refresh = document.querySelector('.refresh');
+  refresh.addEventListener('click', () => {
+    Leaderboard.updateUI();
+  });
   return element;
 }
 

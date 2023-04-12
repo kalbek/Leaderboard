@@ -38,6 +38,19 @@ class Leaderboard {
     return response;
   };
 
-
+  static updateUI = async () => {
+    // get the current leaderboard from api
+    const leaderboard = await Leaderboard.getScores();
+    const scoreTable = document.querySelector('.score-table');
+    // clear current table first
+    scoreTable.innerHTML = '';
+    // finally update list on Leaderboard table
+    leaderboard.result.forEach((s) => {
+      const d = document.createElement('div');
+      d.classList.add('score');
+      d.innerText = `Name: ${s.user}   ${s.score}`;
+      scoreTable.appendChild(d);
+    });
+  };
 }
 module.exports = Leaderboard;

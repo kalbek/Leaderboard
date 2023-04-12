@@ -53,11 +53,11 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-[] To get started: 
-- git clone https://github.com/kalbek/Leaderbord.git
+To get started, follow these commands: 
+- git clone https://github.com/kalbek/Leaderboard.git
 - npm install
 - npm run build
-[] then open => dist/index.html file
+- npm start
 
 Try to have these in your local machine
 
@@ -74,7 +74,7 @@ In order to run this project you need
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/kalbek/Leaderbord.git
+git clone https://github.com/kalbek/Leaderboard.git
 
 ### Install
 

@@ -27,6 +27,17 @@ class Leaderboard {
     score.value = '';
   };
 
-  
+  // get all users and thir scores from api
+  static getScores = async () => {
+    const response = await fetch(this.apiEndPoint, {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    }).then((response) => response.json());
+    return response;
+  };
+
+
 }
 module.exports = Leaderboard;

@@ -53,6 +53,12 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+[] To get started: 
+- git clone https://github.com/kalbek/Leaderbord.git
+- npm install
+- npm run build
+[] then open => dist/index.html file
+
 Try to have these in your local machine
 
 - Git and GitHub

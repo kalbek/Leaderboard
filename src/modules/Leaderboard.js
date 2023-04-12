@@ -45,9 +45,12 @@ class Leaderboard {
     // clear current table first
     scoreTable.innerHTML = '';
     // finally update list on Leaderboard table
-    leaderboard.result.forEach((s) => {
+    leaderboard.result.forEach((s, index) => {
       const d = document.createElement('div');
       d.classList.add('score');
+      if (index % 2 !== 0) {
+        d.classList.add('odd');
+      }
       d.innerText = `Name: ${s.user}   ${s.score}`;
       scoreTable.appendChild(d);
     });

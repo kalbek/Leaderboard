@@ -101,3 +101,7 @@ input::placeholder {
 .score-table .score {
   padding: 5px 10px;
 }
+
+.odd {
+  background-color: #ddd;
+}

@@ -1,3 +1,112 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-spaced {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+main {
+  width: 70%;
+  height: 80%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.display-score {
+  padding-left: 4rem;
+  padding-top: 3rem;
+}
+
+.recent p,
+.add-scores p {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+button {
+  height: 40px;
+  margin-top: 4%;
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 150px;
+  box-shadow: 5px 5px;
+  margin-right: 8px;
+}
+
+.recent button,
+button {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.evens {
+  background-color: #ddd;
+}
+
+.add-scores {
+  padding-top: 3rem;
+  position: relative;
+  height: fit-content;
+}
+
+.add-scores input {
   width: auto;
+  margin-bottom: 1rem;
+  height: 30px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.bordered {
+  border: 3.5px solid black;
+  border-radius: 5px;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border: 3px solid #000;
+  font-size: 16px;
+  font-weight: 600;
+  /* width: 180%; */
+}
+
+.score-table .score {
+  padding: 5px 10px;
 }

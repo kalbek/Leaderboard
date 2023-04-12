@@ -11,7 +11,34 @@
     />
   </head>
   <body>
-    <main>Leaderboards</main>
+    <main class="container">
+      <section class="title">Leaderboard</section>
+      <form action="submit" class="scores flex-spaced">
+        <div class="display-score">
+          <div class="recent flex-centered">
+            <p>Recent scores</p>
+            <button class="button refresh">Refresh</button>
+          </div>
+          <scores class="bordered flex-column score-table">
+            <div class="score">Name: 100</div>
+            <div class="score evens">Name: 20</div>
+            <div class="score">Name: 50</div>
+            <div class="score evens">Name: 78</div>
+            <div class="score">Name: 125</div>
+            <div class="score evens">Name: 77</div>
+            <div class="score">Name: 42</div>
+          </scores>
+        </div>
+        <div class="add-scores flex-column">
+          <p>Add your score</p>
+          <input type="text" class="name" placeholder="Your name" />
+          <input type="text" class="score" placeholder="Your score" />
+          <div class="submit-container flex-end">
+            <button class="button submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
   <script src="./script.js"></script>
 </html>
